@@ -5,3 +5,5 @@
 | Expired credential | expired.json | DENY | DENY | CREDENTIAL_EXPIRED | validUntil is in the past. |
 | Missing claim | missing-claim.json | DENY | DENY | REQUIRED_CLAIM_MISSING | Required status field missing. |
 | Unauthorised action | valid.json + delete-root-database | DENY | DENY | ACTION_NOT_ALLOWED | Action not allowed by policy. |
+| Subject mismatch | valid.json + wrong holder DID | DENY | DENY | SUBJECT_MISMATCH | Holder DID doesn't match credential subject. |
+| Subject mismatch | valid.json + wrong holder DID | DENY | DENY | SUBJECT_MISMATCH | Holder DID doesn't match credential subject. |

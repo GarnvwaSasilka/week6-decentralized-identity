@@ -47,3 +47,8 @@ test('Unauthorized action should yield ACTION_NOT_ALLOWED', () => {
   const res = runVerifier('src/test-fixtures/valid.json', VALID_HOLDER_DID, 'delete-root-database');
   assert.strictEqual(res.reason_code, 'ACTION_NOT_ALLOWED');
 });
+
+test('Subject mismatch should yield SUBJECT_MISMATCH', () => {
+  const res = runVerifier('src/test-fixtures/valid.json', 'did:key:z6MkFakeHolderDoesNotMatch');
+  assert.strictEqual(res.reason_code, 'SUBJECT_MISMATCH');
+});
