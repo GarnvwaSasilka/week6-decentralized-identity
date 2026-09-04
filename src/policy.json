@@ -1,0 +1,21 @@
+{
+  "endpoint": "/training-access",
+  "acceptedIssuer": "did:key:z6MkgGgCACEgQFmVCfA4BCtRZ89K54wKjUoJ9kWjNHQfSnsu",
+  "acceptedType": "IhifixTrainingCredential",
+  "requiredStatus": "active",
+  "requiredClaims": [
+    "course",
+    "cohort",
+    "status"
+  ],
+  "allowedActions": [
+    "read-training-lab"
+  ],
+  "requireAudience": true,
+  "failClosed": true,
+  "logging": {
+    "includePrivateKeys": false,
+    "includeRawSecrets": false,
+    "includeUnnecessaryPersonalData": false
+  }
+}

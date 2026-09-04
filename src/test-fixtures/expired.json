@@ -1,0 +1,29 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "type": [
+    "VerifiableCredential",
+    "IhifixTrainingCredential"
+  ],
+  "issuer": {
+    "id": "did:key:z6MkgGgCACEgQFmVCfA4BCtRZ89K54wKjUoJ9kWjNHQfSnsu",
+    "name": "Ihifix Training Authority"
+  },
+  "validFrom": "2026-09-04T19:21:02.175Z",
+  "validUntil": "2020-01-01T00:00:00Z",
+  "audience": "/training-access",
+  "credentialSubject": {
+    "id": "did:key:z6MkmhmHmC67d5QRbcvRwSypXaGV6ntxYCpayWFujUcBApe3",
+    "course": "Application Security Foundations",
+    "cohort": "Cohort 2",
+    "status": "active",
+    "permittedActions": [
+      "read-training-lab"
+    ]
+  },
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "jws": "eyJhbGciOiJFZDI1NTE5IiwidHlwIjoiSldUIn0.eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvbnMvY3JlZGVudGlhbHMvdjIiXSwidHlwZSI6WyJWZXJpZmlhYmxlQ3JlZGVudGlhbCIsIkloaWZpeFRyYWluaW5nQ3JlZGVudGlhbCJdLCJpc3N1ZXIiOnsiaWQiOiJkaWQ6a2V5Ono2TWtnR2dDQUNFZ1FGbVZDZkE0QkN0Ulo4OUs1NHdLalVvSjlrV2pOSFFmU25zdSIsIm5hbWUiOiJJaGlmaXggVHJhaW5pbmcgQXV0aG9yaXR5In0sInZhbGlkRnJvbSI6IjIwMjYtMDktMDRUMTk6MjE6MDIuMTc1WiIsInZhbGlkVW50aWwiOiIyMDIwLTAxLTAxVDAwOjAwOjAwWiIsImF1ZGllbmNlIjoiL3RyYWluaW5nLWFjY2VzcyIsImNyZWRlbnRpYWxTdWJqZWN0Ijp7ImlkIjoiZGlkOmtleTp6Nk1rbWhtSG1DNjdkNVFSYmN2UndTeXBYYUdWNm50eFlDcGF5V0Z1alVjQkFwZTMiLCJjb3Vyc2UiOiJBcHBsaWNhdGlvbiBTZWN1cml0eSBGb3VuZGF0aW9ucyIsImNvaG9ydCI6IkNvaG9ydCAyIiwic3RhdHVzIjoiYWN0aXZlIiwicGVybWl0dGVkQWN0aW9ucyI6WyJyZWFkLXRyYWluaW5nLWxhYiJdfX0.RzCT8nOriGGg63AycasQI5NzenLgxyWN5LP3Hfpf5AjrFQr0KYq1SQdojgBE4mLwewwOMa9Lvp_Y0_O0_3RMAg"
+  }
+}
